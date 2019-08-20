@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+      var hero={
+          title : "Ironman",
+          power : 6
+      }
+      function checkpower(){
+          if(hero.power > 5){
+              //var temp = hero.title+ " is strong";
+              let temp = hero.title+ " is strong"; //let is used for block scope
+              hero.title = temp;
+              console.log(temp); //runs without any error
+          }
+          // console.log(temp); // ERROR!! block scope for temp is created due to 'let' definition
+          //Uncaught ReferenceError: temp is not defined
+      };
+      checkpower();
+      console.log(hero.title)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
