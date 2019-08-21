@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script/decorator.js"></script>
+    <script>
+        let com = new CommonMan()
+        document.addEventListener("DOMContentLoaded",function(){
+           document.getElementsByTagName(com.selector)[0].innerHTML =com.template;
+        })
+        //console.log(cm.title,cm.power);
+    </script>
+</head>
+<body>
+    <dhiva></dhiva>
+    <!-- any tag name can be given like above "dhiva" -->
+</body>
+</html>
